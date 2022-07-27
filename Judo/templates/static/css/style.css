@@ -1,0 +1,292 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection{
+  color: #fff;
+  background: var(--w-color);
+  border: 2px var(--blue-color);
+}
+form :where(i, p){
+  color: var(--w-color);
+  border: 2px var(--blue-color);
+}
+form i{
+  font-size: 50px;
+}
+form p{
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.content_upload{
+  justify-content: center;
+  align-items: center;
+}
+section .row{
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i{
+  color: var(--accent-color);
+  font-size: 30px;
+}
+section .details span{
+  font-size: 16px;
+  background-color: var(--accent-color);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+      /* Кнопка */
+
+
+p {
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	margin: 0 0 10px 0;
+	padding: 0;
+	line-height: 1.6;
+}
+
+.lol {
+  color: var(--blue-color);
+}
+.fas {
+  background-color: var(--accent-color);
+}
+
+.button {
+  height: 60px;
+  overflow: visible;
+  background: var(--accent-color);
+  border-bottom: 0;
+  font-weight: var(--font-weight-semibold);
+  font-size: 17px;
+  color: var(--blue-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #640c13);
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  border: 2px solid var(--accent-color);
+}
+  .button:hover {
+    background-color: #aa1521;
+   
+  }
+  
+  .button:active {
+    box-shadow: none;
+    top: 5px;
+    background-color: #aa1521;
+    color: var(--flat-color);
+  }
+
+.content_toggle:hover {
+  background-color: #8a101a;
+  color: var(--flat-color);
+}
+
+.content_toggle:active {
+  box-shadow: none;
+  background-color: #aa1521;
+  color: var(--flat-color)
+}
+.content_block {
+  height: 120px;
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px solid #aa1521;;
+  color: var(--accent-color);
+}
+
+/* скроллбар */
+* {
+  scrollbar-width: thin;
+}
+*::-webkit-scrollbar {
+  height: 16px;
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background-color: var(--blue-color);
+  margin-top: auto;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  height: 200px;
+  background-size: contain;
+  overflow: auto;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #dbba00;
+}
+*::-webkit-scrollbar-thumb:active {
+  background: #da9605;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: var(--blue-color);
+  display: block;
+  border-style: solid;
+  height: 16px;
+  width: 16px;
+}
+::-webkit-scrollbar-button:single-button:hover {
+  background-color: #dbba00;
+}
+::-webkit-scrollbar-button:single-button:active {
+  background-color: #da9605;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent var(--bg-color) transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent var(--bg-color) transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  border-color: transparent transparent #4c197c transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 4px 8px;
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: var(--bg-color) transparent transparent transparent;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  border-color: transparent transparent #da9605 transparent;
+}
+.train {
+  color:var(--w-color)
+}
+
+.map {
+  display: block; 
+  height: 600px;
+  loading: lazy;
+  referrerpolicy:no-referrer-when-downgrade;
+}
+
+.center{
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  background: var(--blue-color);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+.center form{
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid var(--accent-color);
+  margin: 40px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--blue-color);
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -10px;
+  color: var(--accent-color);
+  font-size: 18px;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 20px rgb(247, 205, 22);
+  background: var(--accent-color);
+  font-size: 18px;
+  color: var(--blue-color);
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: var(--accent-color);
+  transition: .5s;
+  background-color: var(--w-color);
+}
+
+.carousel slide {
+display: block;
+position: relative;
+justify-content: center;
+}

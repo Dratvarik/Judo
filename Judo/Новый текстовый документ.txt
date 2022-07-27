@@ -1,0 +1,126 @@
+        <section class="section-padding pb-0" id="timeline">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-lg-5 mb-4">Правила приёма</h2>
+                    <div class="timeline">
+                        <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                            <div class="card">   
+                            <div class="card-body">Шаг 1. Выберите файл в формате pdf, doc, xlsx, jpg</div>
+                            </div>
+                          </div>
+                        <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                               <div class="wrapper">
+                                   <form action="#">
+                                        <input class="file-input" type="file" name="file" hidden>
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <p>Выберите файл</p><br>
+                                        <!-- <p style="color: #e1a20d; font-size: 80%;">Не забудьте, что файлы должны быть только в формате pdf, doc или jpg!</p> -->
+                                       </form>
+                                    <section class="progress-area"></section>
+                                    <section class="uploaded-area"></section>
+                            </div>
+                        </div>
+          
+                        <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                            <div class="col-9 col-md-5 me-md-4 me-lg-0 order-1 order-md-1 timeline-content bg-white shadow-lg">
+                                <h3 class="text-light">Шаг 2. Выберите данные для обезличивания</h3>
+                                <p style="color: #0e0323">Пожалуйста, выберите данные, которые необходимо обезличить: ФИО, номер телефона и др.</p>
+                            </div>
+
+                            <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                <i class="bi-card-checklist timeline-icon"></i>
+                            </div>
+                            <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-3 order-md-3 timeline-nodes">
+                                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                <input type="checkbox" class="btn-check" id="btncheck1" value="ФИО" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck1">ФИО</label>
+                            
+                                <input type="checkbox" class="btn-check" id="btncheck2" value="Телефон" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck2">Телефон</label>
+                            
+                                <input type="checkbox" class="btn-check" id="btncheck3" value="Почта" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck3">Почта</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck4" value="Дата рождения" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck4">Дата рождения</label>
+                            </div>
+                           </div>
+                        </div>
+
+                        <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                            <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-1 order-md-1 timeline-content bg-white shadow-lg">
+                                <h3 class=" text-light">Шаг 3. Обезличить данные</h3>
+                                <p style="color: #0e0323" >Нажмите на кнопку "Обезличить"</p>
+                              </div>
+
+                            <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                <i class="bi-eye-slash timeline-icon"></i>
+                            </div>
+
+                            <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-3 timeline-content">
+                             <button id = "submit" type="submit" class="btn btn-block w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Обезличить</button>
+                             <div id='loader' style='display: none;'>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Идёт обезличивание...</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="text-center">
+                                            <div class="spinner-border" id="spin" role="status">
+                                              <span class="visually-hidden" >Loading...</span>
+                                              <div class='response'></div>
+                                            </div>
+                                            </div>
+                                            <div id="successAlert" class="alert alert-success alert-dismissible fade show" role="alert" style="display:none;">
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>
+                                           </div>
+                                           
+                                      </div>
+                                    </div>
+                                  </div>
+                                   </div>
+                             </div>
+                        </div>
+
+                        <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                            <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-1 order-md-1 timeline-content bg-white shadow-lg">
+                                <h3 class=" text-light">Шаг 4. Просмотр статистики</h3>
+                                <p style="color: #0e0323">Ознакомьтесь с количеством обезличенных данных</p>
+                              </div>
+
+                            <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                <i class="bi-graph-up timeline-icon"></i>
+                            </div>
+
+                            <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-3 timeline-content">
+                                    <a class="content_toggle">Статистика</a>
+                                    <div class="content_block" style="display: none;">
+                                        <span id = "count" class="percent"></span>
+                                        <!-- <p>Обезличено слов: {{data}}</p>	 -->
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                            <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-1 order-md-1 timeline-content bg-white shadow-lg">
+                                <h3 class=" text-light">Шаг 5.Готово!</h3>
+
+                                <p style="color: #0e0323">Обезличивание завершено. Скачайте ваш файл!</p>
+                            </div>
+
+                            <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                <i class="bi-check2-circle timeline-icon"></i>
+                            </div>
+
+                            <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-3 timeline-content ">
+                                        <a href="/download" class="button">скачать</a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

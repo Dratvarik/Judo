@@ -1,0 +1,7 @@
+Flask
+natasha
+pytesseract
+opencv-python
+pdf2image
+Pillow
+matplotlib
