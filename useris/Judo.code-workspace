@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\neuroAnalise-1"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\testsites\\mysite"
+		}
+	],
+    "settings": {}
+}
