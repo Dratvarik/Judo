@@ -17,7 +17,7 @@ class Treners(models.Model):
     surname=models.CharField(max_length=50, verbose_name= 'Фамилия')
     name=models.CharField(max_length=50, verbose_name='Имя')
     middlename=models.CharField(max_length=50, verbose_name='Отчество')
-    FIO_coach=models.CharField(max_length=100, db_index=True, verbose_name= 'ФИО тренера')
+    FIO_coach=models.CharField(max_length=100, db_index=True, verbose_name= 'ФИО тренера', blank=False)
 
 
     def __str__(self):
@@ -68,6 +68,7 @@ class Children (models. Model):
 class Userss(models.Model):
     name=models.CharField(max_length=150, verbose_name='Имя')
     phone=models.CharField(max_length=20, verbose_name='Телефон')
+    created=models.DateTimeField(auto_now_add=True, verbose_name='Добавлено')
 
     def __str__(self):
         return str(self.name)
