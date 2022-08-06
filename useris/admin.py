@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import Children, Groups, Season_tickets, Treners
-from .forms import Userss
 # Register your models here.
 
 

@@ -67,11 +67,11 @@ class Children (models. Model):
 
 class Userss(models.Model):
     name=models.CharField(max_length=150, verbose_name='Имя')
-    phone=models.CharField(max_length=200, verbose_name='Телефон')
+    phone=models.CharField(max_length=20, verbose_name='Телефон')
 
     def __str__(self):
         return str(self.name)
 
-    class Meta:
-        verbose_name='желающий'
-        verbose_name_plural='Желающие'
+    # class Meta:
+    #     verbose_name='желающий'
+    #     verbose_name_plural='Желающие'
