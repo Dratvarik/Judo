@@ -72,6 +72,6 @@ class Userss(models.Model):
     def __str__(self):
         return str(self.name)
 
-    # class Meta:
-    #     verbose_name='желающий'
-    #     verbose_name_plural='Желающие'
+    class Meta:
+        verbose_name='желающий'
+        verbose_name_plural='Желающие'

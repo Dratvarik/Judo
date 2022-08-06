@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Children, Groups, Season_tickets, Treners
+from .models import Children, Groups, Season_tickets, Treners, Userss
 # Register your models here.
 
 
@@ -24,12 +24,12 @@ class TrenersAdmin(admin.ModelAdmin):
 class Season_ticketsAdmin(admin.ModelAdmin):
     list_display=('season_ticket', )
 
-# class UserssAdmin(admin.FormAdmin):
-#     list_display=('name', 'phone')
+class UserssAdmin(admin.ModelAdmin):
+    list_display=('name', 'phone')
 
 
 admin.site.register(Children, ChildrenAdmin)
 admin.site.register(Groups, GroupsAdmin)
 admin.site.register(Treners, TrenersAdmin)
 admin.site.register(Season_tickets, Season_ticketsAdmin)
-# admin.site.register(Userss, UserssAdmin)
+admin.site.register(Userss, UserssAdmin)
