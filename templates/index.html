@@ -4,6 +4,8 @@
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -196,7 +198,7 @@
                             <img src="static/images/aii.jpeg" class="card-img-top" alt="АИИ">
                             <div class="card-body">
                                 <h5 class="card-title">Авдеев Иван Иванович</h5>
-                                <p class="card-text" style="text-align:justify"><br>Мастер спорта СССР по Дзюдо <br>Мастер спорта СССР по Самбо<br>•Тренер по Дзюдо, Самбо, Грэпплингу.<br> Опыт работы более 20 лет <br>Образование: <br>РГПУ им. А. И. Герцена
+                                <p class="card-text" style="text-align:justify"><br>Мастер спорта СССР по Дзюдо <br>Мастер спорта СССР по Самбо<br>•Тренер по Дзюдо, Самбо, Грэпплингу.<br> Опыт работы более 20 лет <br>Образование: <br>РГПУ им. А. И. Герцена, Санкт-Петербург
                                 </p>
                             </div>
                         </div>
@@ -221,7 +223,7 @@
                             <img src="static/images/shusha.jpeg" class="card-img-top" alt="ШУША">
                             <div class="card-body">
                                 <h5 class="card-title">Суша Анастасия Эдуардовна</h5>
-                                <p class="card-text" style="text-align:justify">Мастер спорта по художественной гимнастике<br>•Тренер по художественной гимнастике и акробатике<br>Опыт работы более 4х лет<br>Образование: <br>РГПУ им. А. И. Герцена
+                                <p class="card-text" style="text-align:justify">Мастер спорта по художественной гимнастике<br>•Тренер по художественной гимнастике и акробатике<br>Опыт работы более 4х лет<br>Образование: <br>РГПУ им. А. И. Герцена, Санкт-Петербург
                                 </p>
                             </div>
                         </div>
@@ -326,6 +328,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section-padding pb-0" id="reg">
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center ">
@@ -339,7 +342,13 @@
                                 <span></span>
                                 <label for="id_name">Имя:</label> </div>
                             <div class="txt_field">
-                                <input type="text" name="phone" maxlength="20" required id="id_phone">
+                                <script type="text/javascript">
+                                    jQuery(function($) {
+                                        $(".phone").mask("+7(999)999-99-99");
+                                    });
+                                </script>
+                                <input type="text" class="phone" name="phone" maxlength="20" required id="id_phone">
+                                <!-- <input type="text" name="phone" maxlength="20" required id="id_phone"> -->
                                 <span></span>
                                 <th><label for="id_phone">Телефон:</label></th>
                             </div>
