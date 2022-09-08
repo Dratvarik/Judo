@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
     --bs-blue: var(--accent-color);
     --bs-indigo: #6610f2;
@@ -236,7 +235,6 @@ a:not([href]):not([class]):hover {
     text-decoration: none;
     outline: none!important;
     border: none!important;
-
 }
 
 code,
@@ -2870,7 +2868,7 @@ textarea.form-control.is-invalid {
     z-index: 3
 }
 
-.btn { 
+.btn {
     height: 60px;
     overflow: visible;
     background: var(--accent-color);
@@ -2889,16 +2887,14 @@ textarea.form-control.is-invalid {
     cursor: pointer;
     display: block;
     border: 2px solid var(--accent-color);
-    
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: var(--accent-color);
     color: var(--blue-color);
-   
-  }
-  
-  .btn:active {
+}
+
+.btn:active {
     box-shadow: none;
     top: 5px;
     background-color: rgba(255, 238, 0, 0.904);
@@ -2910,6 +2906,7 @@ textarea.form-control.is-invalid {
         transition: none
     }
 }
+
 
 /* .btn-check:focus+.btn,
 .btn:focus {
@@ -2941,12 +2938,13 @@ fieldset:disabled .btn {
     font-weight: var(--font-weight-normal);
     transition: all 0.3s;
     box-shadow: 0 0 0 .25rem var(--accent-color);
-  }
+}
+
 .btn-primary:hover {
     background: var(--w-color);
     color: var(--bg-color);
     box-shadow: 0 0 0 .25rem var(--accent-color);
-  }
+}
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
@@ -3313,7 +3311,7 @@ fieldset:disabled .btn {
     cursor: pointer;
     display: block;
     border: 2px solid var(--accent-color)
-  }
+}
 
 .btn-outline-primary:hover {
     background-color: rgba(255, 208, 0, 0.904);
@@ -4021,7 +4019,6 @@ fieldset:disabled .btn {
 .btn-group-vertical {
     position: relative;
     display: block;
-
 }
 
 .btn-group-vertical>.btn,
@@ -4601,7 +4598,7 @@ btn-group-vertical>.btn-group:not(:first-child),
     position: relative;
     display: block;
     background-color: var(--blue-color);
-    color:var(--accent-color);
+    color: var(--accent-color);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -4712,9 +4709,9 @@ btn-group-vertical>.btn-group:not(:first-child),
 .card-img-bottom,
 .card-img-top {
     width: 100%;
-    height: 250px; 
-    object-fit: cover; 
-    object-position: bottom; 
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .card-img,

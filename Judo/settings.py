@@ -93,6 +93,17 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mssql', 
+#         'NAME': 'msdb1',
+#         'HOST': '127.0.0.1',
+#         'PORT': '',
+#         'USER': 'LAPTOP-LSEVUL2D\Dratvarik',
+#         'PASSWORD': '',
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -139,3 +150,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'templates/media')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

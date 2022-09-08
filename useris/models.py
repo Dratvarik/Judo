@@ -66,6 +66,7 @@ class Children (models. Model):
         # ordering=['-created_at', 'title']
 
 class Userss(models.Model):
+    surname=models.CharField(max_length=150, verbose_name='Фамилия')
     name=models.CharField(max_length=150, verbose_name='Имя')
     phone=models.CharField(max_length=20, verbose_name='Телефон')
     created=models.DateTimeField(auto_now_add=True, verbose_name='Добавлено')

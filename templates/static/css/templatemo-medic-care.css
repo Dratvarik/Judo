@@ -12,13 +12,14 @@ https://templatemo.com/tm-566-medic-care
 -----------------------------------------*/
 
 :root {
-    --bg-color: #4144ff;
+    --bg-color: #f5deb3;
     --adv-color: #774360;
     --accent-color: #02005f;
     --flat-color: #000000;
     --w-color: #ff0000;
     --blue-color: #ffffff;
     --ff-color: #0077ff9f;
+    --pp-color: #0a3694;
     --body-font-family: 'Open Sans', sans-serif;
     --h1-font-size: 40px;
     --h2-font-size: 34px;
@@ -328,7 +329,7 @@ strong {
     padding-bottom: 20px;
 }
 
-.navbar-brand {
+.rand {
     color: var(--accent-color);
     font-size: var(--h3-font-size);
     font-weight: var(--font-weight-bold);
