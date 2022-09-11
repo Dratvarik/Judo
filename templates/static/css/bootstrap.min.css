@@ -699,7 +699,7 @@ progress {
     padding-right: calc(var(--bs-gutter-x)/ 2);
     padding-left: calc(var(--bs-gutter-x)/ 2);
     margin-top: var(--bs-gutter-y);
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .col {

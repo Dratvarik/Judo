@@ -1,8 +1,5 @@
 from django.shortcuts import redirect, render
-from django.http import HttpResponse, HttpResponseRedirect
-from .models import Userss
 from .forms import UsersForm
-from django.core.mail import send_mail
 
 # Create your views here.
 
