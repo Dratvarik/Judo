@@ -4709,9 +4709,9 @@ btn-group-vertical>.btn-group:not(:first-child),
 .card-img-bottom,
 .card-img-top {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-    object-position: bottom;
+    object-position: top;
 }
 
 .card-img,

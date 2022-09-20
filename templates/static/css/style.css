@@ -1,29 +1,116 @@
 /* Import Google font - Poppins */
 
-.social {display: inline-block;}
+
+/* отзывы */
+
+.koguvcavis-varazdel {
+    padding: 38px 0;
+    background: var(--bg-color);
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.sestim-donials {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.sectionesag {
+    width: 195px;
+    height: 3px;
+    background: var(--bg-color);
+    margin: 23px auto;
+}
+
+.sagestim-lonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vemotau-vokusipol {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial {
+    background: #f9f4f4;
+    padding: 28px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.gecedanam {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.apogered-gselected {
+    color: #53b32b;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+    .vemotau-vokusipol {
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .vemotau-vokusipol {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.social {
+    display: inline-block;
+}
+
 .social a {
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin: 0 10px 10px 0;
-	text-align: center;
-	color: #fff;
-	border: 1px solid #ccc;
-	border-radius: 24px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 .social a:hover {
-	border-color: #888;
-	opacity: .8;
+    border-color: #888;
+    opacity: .8;
 }
+
 .social svg {
-	margin-top: 7px;
-	width: 32px;
-	height: 32px;
+    margin-top: 7px;
+    width: 32px;
+    height: 32px;
 }
-.instagram a {background: #3f729b}
-.telegram a {background: #249bd7}
-.k a {background: #4a76a8}
+
+.instagram a {
+    background: #3f729b
+}
+
+.telegram a {
+    background: #249bd7
+}
+
+.k a {
+    background: #4a76a8
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
@@ -104,10 +191,6 @@ h4 {
 
 .lol {
     color: var(--blue-color);
-}
-
-.fas {
-    background-color: var(--accent-color);
 }
 
 .button {
@@ -361,8 +444,9 @@ button[type="submit"]:hover {
     background-color: var(--w-color);
 }
 
-.carousel slide {
+
+/* .carousel slide {
     display: block;
     position: relative;
     justify-content: center;
-}
+} */

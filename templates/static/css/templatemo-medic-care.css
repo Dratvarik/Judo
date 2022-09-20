@@ -12,7 +12,8 @@ https://templatemo.com/tm-566-medic-care
 -----------------------------------------*/
 
 :root {
-    --bg-color: #fac8ac;
+    /* --bg-color: #fac8ac; */
+    --bg-color: #ebebeb;
     --adv-color: #774360;
     --accent-color: #02005f;
     --flat-color: #000000;
