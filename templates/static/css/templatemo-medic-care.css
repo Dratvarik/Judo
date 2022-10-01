@@ -15,9 +15,9 @@ https://templatemo.com/tm-566-medic-care
     /* --bg-color: #fac8ac; */
     --bg-color: #ebebeb;
     --adv-color: #774360;
-    --accent-color: #02005f;
+    --accent-color: #1a1886;
     --flat-color: #000000;
-    --w-color: #ff0000;
+    --w-color: #da3232;
     --blue-color: #ffffff;
     --ff-color: #0077ff9f;
     --pp-color: #0a3694;
@@ -41,6 +41,7 @@ body {
     font-family: var(--body-font-family);
     position: relative;
     padding-top: 94px;
+    padding-right: -8px;
 }
 
 

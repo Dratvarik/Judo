@@ -2879,11 +2879,11 @@ textarea.form-control.is-invalid {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 0 20px rgb(247, 205, 22);
+    box-shadow: 0 0 20px rgb(131, 174, 255);
     padding: 1em 0;
     text-align: center;
     position: relative;
-    justify-content: center;
+    justify-content: end;
     cursor: pointer;
     display: block;
     border: 2px solid var(--accent-color);
@@ -2929,6 +2929,7 @@ fieldset:disabled .btn {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 5px;
+    position: relative;
 }
 
 .booking-form .btn-primary {
@@ -2937,20 +2938,20 @@ fieldset:disabled .btn {
     border-bottom: 1px solid var(--accent-color);
     font-weight: var(--font-weight-normal);
     transition: all 0.3s;
-    box-shadow: 0 0 0 .25rem var(--accent-color);
+    box-shadow: 0 0 0 .2rem var(--accent-color);
 }
 
 .btn-primary:hover {
     background: var(--w-color);
     color: var(--bg-color);
-    box-shadow: 0 0 0 .25rem var(--accent-color);
+    box-shadow: 0 0 0 .2rem var(--accent-color);
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: var(--bg-color);
     background-color: var(--w-color);
-    box-shadow: 0 0 0 .25rem var(--accent-color);
+    box-shadow: 0 0 0 .2rem var(--accent-color);
 }
 
 .btn-check:active+.btn-primary,
@@ -2969,7 +2970,7 @@ fieldset:disabled .btn {
 .btn-primary.active:focus,
 .btn-primary:active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 20px rgb(247, 205, 22);
+    box-shadow: 0 0 20px rgb(143, 158, 245);
 }
 
 .btn-primary.disabled,
@@ -4601,7 +4602,6 @@ btn-group-vertical>.btn-group:not(:first-child),
     color: var(--accent-color);
     text-align: center;
     justify-content: center;
-    align-items: center;
     font-size: 30px;
     font-weight: 600;
     background-clip: border-box;

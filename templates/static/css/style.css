@@ -274,11 +274,11 @@ h4 {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-    background: #dbba00;
+    background: var(--w-color)
 }
 
 *::-webkit-scrollbar-thumb:active {
-    background: #da9605;
+    background: var(--w-color);
 }
 
 
@@ -297,7 +297,7 @@ h4 {
 }
 
 ::-webkit-scrollbar-button:single-button:active {
-    background-color: #da9605;
+    background-color: var(--w-color);
 }
 
 
@@ -329,7 +329,7 @@ h4 {
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:increment:active {
-    border-color: transparent transparent #da9605 transparent;
+    border-color: transparent transparent var(--w-color) transparent;
 }
 
 .train {
@@ -429,7 +429,6 @@ button[type="submit"] {
     height: 60px;
     border-radius: 5px;
     border-color: var(--accent-color);
-    box-shadow: 0 0 20px rgb(247, 205, 22);
     background: var(--accent-color);
     font-size: 18px;
     color: var(--blue-color);

@@ -46,7 +46,7 @@ class Children (models. Model):
     surname=models.CharField(max_length=50, verbose_name= 'Фамилия')
     name=models.CharField(max_length=50, verbose_name='Имя')
     middlename=models.CharField(max_length=50, verbose_name='Отчество')
-    idgroup=models.ManyToManyField (Groups, db_table='sostav_groups', verbose_name='Группа')
+    name_section=models.ForeignKey (Groups, on_delete=models.PROTECT, null=True, verbose_name='Группа')
     date_of_birth=models.DateField( null=True, verbose_name='Дата рождения')
     payment=models.BooleanField(default=False, verbose_name='Оплата')
     date_of_pay=models.DateField(null=True, verbose_name='Дата посл. оплаты')

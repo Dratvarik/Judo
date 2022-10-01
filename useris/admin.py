@@ -4,15 +4,15 @@ from .models import Children, Groups, Season_tickets, Treners, Userss
 
 
 class ChildrenAdmin(admin.ModelAdmin):
-    list_display=('surname', 'name', 'middlename',  'date_of_birth', 'payment', 'date_of_pay', 'season_ticket', 'comments')
+    list_display=('surname', 'name', 'middlename', 'name_section', 'date_of_birth', 'payment', 'date_of_pay', 'season_ticket', 'comments')
     list_display_links=('surname', 'name', 'middlename')
     search_fields=('surname', 'name', 'middlename',  'date_of_birth', 'payment', 'date_of_pay', 'season_ticket', 'comments')
     list_editable=('payment', )
-    list_filter=('surname', 'name', 'middlename',  'date_of_birth', 'payment', 'date_of_pay', 'season_ticket')
+    list_filter=('name_section', 'surname', 'name', 'middlename',  'date_of_birth', 'payment', 'date_of_pay', 'season_ticket')
 
 class GroupsAdmin(admin.ModelAdmin):
     list_display=('name_section', 'quantity_in_week', 'cost', 'FIO_coach')
-    list_display_links=('name_section', )
+    list_display_links=('name_section', )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     search_fields=('name_section', 'quantity_in_week', 'cost', 'FIO_coach')
     list_filter=('name_section', 'quantity_in_week', 'FIO_coach')
 
@@ -24,7 +24,7 @@ class Season_ticketsAdmin(admin.ModelAdmin):
     list_display=('season_ticket', )
 
 class UserssAdmin(admin.ModelAdmin):
-    list_display=('name', 'phone', 'created')
+    list_display=('surname', 'name', 'phone', 'created')
     list_filter=('created', )
 
 
